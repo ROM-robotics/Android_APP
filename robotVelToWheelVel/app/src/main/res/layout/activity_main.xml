@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vr_rpm_label"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#95bcfc">
+
+    <EditText
+        android:id="@+id/wheel_rad_value"
+        android:layout_width="153dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <EditText
+        android:id="@+id/vl_value"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="212dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/vl_label"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <EditText
+        android:id="@+id/vr_value"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="250dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/vl_label"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <EditText
+        android:id="@+id/vl_rpm_value"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="328dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/vl_label"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <EditText
+        android:id="@+id/vr_rpm_value"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="368dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/vl_label"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <EditText
+        android:id="@+id/base_width_value"
+        android:layout_width="153dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <EditText
+        android:id="@+id/ang_vel_value"
+        android:layout_width="153dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/lin_vel"
+        android:layout_width="109dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="26dp"
+        android:text="Linear Velocity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_1"
+        android:layout_width="47dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="26dp"
+        android:text="m / s"
+        app:layout_constraintStart_toEndOf="@+id/lin_vel_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_2"
+        android:layout_width="51dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
+        android:text="rad / s"
+        app:layout_constraintStart_toEndOf="@+id/ang_vel_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_vl"
+        android:layout_width="53dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="212dp"
+        android:text="rad / s"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vl_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_vr"
+        android:layout_width="54dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="252dp"
+        android:text="rad / s"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vl_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_vl_rpm"
+        android:layout_width="67dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="328dp"
+        android:text="rev / min"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vl_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_vr_rpm"
+        android:layout_width="66dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="368dp"
+        android:text="rev / min"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vl_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_3"
+        android:layout_width="51dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="100dp"
+        android:text="meter"
+        app:layout_constraintStart_toEndOf="@+id/base_width_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/unit_label_4"
+        android:layout_width="50dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="132dp"
+        android:text="meter"
+        app:layout_constraintStart_toEndOf="@+id/wheel_rad_value"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <TextView
+        android:id="@+id/ang_velocity"
+        android:layout_width="109dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="14dp"
+        android:text="Angular velocity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_vel" />
+
+    <TextView
+        android:id="@+id/base_width"
+        android:layout_width="109dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="14dp"
+        android:text="Base Width"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ang_velocity" />
+
+    <TextView
+        android:id="@+id/wheel_radius"
+        android:layout_width="109dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="14dp"
+        android:text="Wheel Radius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base_width" />
+
+    <TextView
+        android:id="@+id/vl_label"
+        android:layout_width="125dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="92dp"
+        android:text="Left Wheel Velocity"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base_width" />
+
+    <TextView
+        android:id="@+id/vr_label"
+        android:layout_width="135dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="132dp"
+        android:text="Right Wheel Velocity"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base_width" />
+
+    <TextView
+        android:id="@+id/vl_rpm_label"
+        android:layout_width="125dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="208dp"
+        android:text="Left Wheel RPM"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base_width" />
+
+    <TextView
+        android:id="@+id/vl_label4"
+        android:layout_width="125dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="248dp"
+        android:text="Right Wheel RPM"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base_width" />
+
+    <TextView
+        android:id="@+id/session_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Robot Velocity to Left / Right Wheel Velocities"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lin_vel_value"
+        android:layout_width="153dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session_title" />
+
+    <Button
+        android:id="@+id/cal_btn1"
+        android:layout_width="118dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="52dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vr_rpm_value" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
