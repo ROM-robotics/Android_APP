@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CurrencyCalculator</string>
+    <string name="convert_string"> ပြောင်းပါ </string>
+    <string name="rom_robotics">rom robotics</string>
+    <string name="dollars_hints">dollars</string>
+    <string name="no_value_string">No Value</string>
+</resources>
